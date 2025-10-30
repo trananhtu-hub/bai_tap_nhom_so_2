@@ -54,7 +54,6 @@ def crawl(limit_pages=2):
             date_value = ad.get("time") or ad.get("date")
 
             row = {
-                "date": format_date(date_value),
                 "ad_type_name": ad.get("category_name") or ad.get("ad_type_name") or "",
                 "area": ad.get("area"),
                 "price": ad.get("price"),
